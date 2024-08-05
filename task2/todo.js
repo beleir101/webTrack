@@ -32,7 +32,7 @@ function display() {
 function main() {
     var readline = require('readline').createInterface({
         input: process.stdin,
-        output: process.stdout
+        output: process.stdout,
     });
     readline.question("What would you like to do? (add, remove, display, exit): ", function (choice) {
         switch (choice.toLowerCase()) {
@@ -66,7 +66,8 @@ function main() {
                 break;
             default:
                 console.log("Invalid choice. Please choose from: add, remove, display, exit");
-                main(); // Ask for another action
+                main();
         }
     });
 }
+main();

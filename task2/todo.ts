@@ -1,4 +1,4 @@
-interface toDoitem{
+type toDoitem={
     description: string;
     done: boolean;
     id: number;
@@ -85,7 +85,8 @@ function main(): void {
   
           default:
             console.log("Invalid choice. Please choose from: add, remove, display, exit");
-            main(); // Ask for another action
+            main(); 
         }
       }
     );}
+    main();

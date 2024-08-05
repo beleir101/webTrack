@@ -1,4 +1,4 @@
-type toDoitem={
+interface toDoitem{
     description: string;
     done: boolean;
     id: number;
